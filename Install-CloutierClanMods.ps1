@@ -257,6 +257,19 @@ foreach ($mod in $manifest.mods) {
     }
 }
 
+if ($manifest.mods | Where-Object {
+    $_.namespace -eq "RandyKnapp" -and
+    $_.name -eq "EquipmentAndQuickSlots"
+}) 
+{
+
+Write-Host "Copying EquipmentAndQuickSlots config file..." -ForegroundColor Cyan
+
+Copy-Item ".\config\randyknapp.mods.equipmentandquickslots.cfg" `
+          "$ValheimPath\BepInEx\config\" -Force
+
+Write-Host "Copied EquipmentAndQuickSlots config file."
+}
 
 #
 # Verify
@@ -265,10 +278,12 @@ foreach ($mod in $manifest.mods) {
 Write-Host ""
 Write-Host "Installed plugins:" -ForegroundColor Cyan
 
-Get-ChildItem `
+ Get-ChildItem `
     $pluginPath `
     -Filter "*.dll" |
     Select-Object Name
+
+
 
 
 Write-Host ""
