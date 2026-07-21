@@ -1,0 +1,35 @@
+{
+  "mods": [
+    {
+      "namespace": "ValheimModding",
+      "name": "Jotunn",
+      "version": "2.29.2"
+    },
+    {
+      "namespace": "ValheimModding",
+      "name": "JsonDotNET",
+      "version": "13.0.4"
+    },
+    {
+      "namespace": "RandyKnapp",
+      "name": "EpicLoot",
+      "version": "0.12.15"
+    },
+    {
+     "namespace": "Azumatt",
+     "name": "AzuCraftyBoxes",
+     "version": "1.8.14"
+    },
+    {
+     "namespace": "RandyKnapp",
+     "name": "EquipmentAndQuickSlots",
+     "version": "2.1.14",
+     "clientOnly": true
+    },
+    {
+     "namespace": "Advize",
+     "name": "PlantEverything",
+     "version": "1.20.0"
+    }
+  ]
+}
