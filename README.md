@@ -31,20 +31,26 @@ This installer automatically downloads and installs all required client-side mod
 
 1. Clone this repository or download it as a ZIP.
 
-2. Find Windows PowerShell. Right click and run as Administrator.
+2. Open **PowerShell as Administrator**.
 
-3. Navigate to where you unziped the folder and run:
+   - Open the Start Menu
+   - Search for **PowerShell**
+   - Right-click **Windows PowerShell**
+   - Select **Run as administrator**
 
+3. Navigate to the repository folder:
 
    ```powershell
-   cd C:\{Where you unziped the folder}
+   cd C:\Path\To\CloutierClan-Valheim-ModPack
    ```
+
+4. Run the installer:
 
    ```powershell
    .\Install-ModPack.ps1
    ```
 
-4. If Valheim is installed in the default Steam location, the installer will detect it automatically.
+5. If Valheim is installed in the default Steam location, the installer will detect it automatically.
 
    If not, you'll be prompted to enter your Valheim installation folder.
 
@@ -54,9 +60,22 @@ This installer automatically downloads and installs all required client-side mod
    F:\SteamLibrary\steamapps\common\Valheim
    ```
 
-5. Launch Valheim.
+6. Launch Valheim and connect to the CloutierClan server.
 
-6. Connect to the CloutierClan server.
+---
+
+## Permissions
+
+The installer requires administrator privileges because it modifies the Valheim installation directory.
+
+Running without administrator privileges may result in:
+
+- Permission denied errors
+- Mods not being copied
+- BepInEx files not being updated
+- Configuration changes failing
+
+Always run the installer from an elevated PowerShell window.
 
 ---
 
